@@ -676,3 +676,31 @@ body.bloqueado .tela-senha {
 
   html { scroll-behavior: auto; }
 }
+
+/* Versículo abaixo do cronômetro */
+.versiculo {
+  max-width: 650px;
+  margin: 35px auto 0;
+  padding: 24px 20px;
+  text-align: center;
+  border-top: 1px solid rgba(196, 134, 139, 0.25);
+}
+
+.versiculo p {
+  margin: 0;
+  font-family: var(--serif);
+  font-size: clamp(1.2rem, 3vw, 1.6rem);
+  font-style: italic;
+  line-height: 1.5;
+  color: var(--rosa-claro);
+}
+
+.versiculo span {
+  display: block;
+  margin-top: 12px;
+  font-family: var(--sans);
+  font-size: 0.9rem;
+  letter-spacing: 0.08em;
+  color: var(--texto-suave);
+}
+
