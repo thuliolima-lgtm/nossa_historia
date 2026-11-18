@@ -1,0 +1,380 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0c0a0b">
+  <title>Nossa História</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'%3E%3Cg fill='%23d4a547'%3E%3Cellipse cx='24' cy='9' rx='3.5' ry='8' transform='rotate(0 24 24)'/%3E%3Cellipse cx='24' cy='9' rx='3.5' ry='8' transform='rotate(45 24 24)'/%3E%3Cellipse cx='24' cy='9' rx='3.5' ry='8' transform='rotate(90 24 24)'/%3E%3Cellipse cx='24' cy='9' rx='3.5' ry='8' transform='rotate(135 24 24)'/%3E%3Cellipse cx='24' cy='9' rx='3.5' ry='8' transform='rotate(180 24 24)'/%3E%3Cellipse cx='24' cy='9' rx='3.5' ry='8' transform='rotate(225 24 24)'/%3E%3Cellipse cx='24' cy='9' rx='3.5' ry='8' transform='rotate(270 24 24)'/%3E%3Cellipse cx='24' cy='9' rx='3.5' ry='8' transform='rotate(315 24 24)'/%3E%3C/g%3E%3Ccircle cx='24' cy='24' r='9' fill='%233a1a14'/%3E%3C/svg%3E">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bloqueado">
+
+  <!-- Tela de senha -->
+  <div class="tela-senha" id="tela-senha">
+    <form class="caixa-senha" id="form-senha" autocomplete="off">
+      <h1>Este lugar é nosso</h1>
+      <p>Digite a senha para entrar.</p>
+
+      <label class="sr-only" for="campo-senha">Senha</label>
+      <input type="password" id="campo-senha" placeholder="Senha" required>
+
+      <button type="submit" class="botao">Entrar</button>
+
+      <p class="erro-senha" id="erro-senha" role="alert" hidden>
+        Senha incorreta. Tente novamente.
+      </p>
+    </form>
+  </div>
+
+  <!-- Cabeçalho -->
+  <header class="topo" id="topo">
+    <a class="marca" href="#inicio">
+      Nossa História
+
+      <svg class="girassol" viewBox="0 0 48 48" aria-hidden="true">
+        <g fill="#d4a547">
+          <ellipse cx="24" cy="9" rx="3.2" ry="7.5" transform="rotate(0 24 24)"/>
+          <ellipse cx="24" cy="9" rx="3.2" ry="7.5" transform="rotate(30 24 24)"/>
+          <ellipse cx="24" cy="9" rx="3.2" ry="7.5" transform="rotate(60 24 24)"/>
+          <ellipse cx="24" cy="9" rx="3.2" ry="7.5" transform="rotate(90 24 24)"/>
+          <ellipse cx="24" cy="9" rx="3.2" ry="7.5" transform="rotate(120 24 24)"/>
+          <ellipse cx="24" cy="9" rx="3.2" ry="7.5" transform="rotate(150 24 24)"/>
+          <ellipse cx="24" cy="9" rx="3.2" ry="7.5" transform="rotate(180 24 24)"/>
+          <ellipse cx="24" cy="9" rx="3.2" ry="7.5" transform="rotate(210 24 24)"/>
+          <ellipse cx="24" cy="9" rx="3.2" ry="7.5" transform="rotate(240 24 24)"/>
+          <ellipse cx="24" cy="9" rx="3.2" ry="7.5" transform="rotate(270 24 24)"/>
+          <ellipse cx="24" cy="9" rx="3.2" ry="7.5" transform="rotate(300 24 24)"/>
+          <ellipse cx="24" cy="9" rx="3.2" ry="7.5" transform="rotate(330 24 24)"/>
+        </g>
+
+        <circle cx="24" cy="24" r="8" fill="#3a1a14"/>
+        <circle cx="24" cy="24" r="8" fill="none" stroke="#7a1d30" stroke-width="1.5"/>
+        <circle cx="24" cy="24" r="3" fill="#5a2a1c"/>
+      </svg>
+    </a>
+
+    <button
+      class="menu-botao"
+      id="menu-botao"
+      type="button"
+      aria-expanded="false"
+      aria-controls="menu"
+      aria-label="Abrir menu"
+    >
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <nav class="menu" id="menu" aria-label="Principal">
+      <a href="#inicio" data-pagina="inicio">Início</a>
+      <a href="#galeria" data-pagina="galeria">Galeria</a>
+      <a href="#musica" data-pagina="musica">Nossa Música</a>
+      <a href="#tempo" data-pagina="tempo">Nosso Tempo</a>
+    </nav>
+  </header>
+
+  <main id="conteudo">
+
+    <!-- Página inicial -->
+    <section
+      class="pagina pagina-inicio"
+      id="pagina-inicio"
+      aria-labelledby="titulo-inicio"
+    >
+      <figure class="arco">
+        <img src="imagens/foto41.jpeg" alt="Nossa primeira foto juntos">
+
+        <figcaption class="bilhete-primeira-foto">
+          Nossa primeira foto juntos.
+          <span>O começo de uma história que eu quero continuar vivendo com você. ❤️</span>
+        </figcaption>
+      </figure>
+
+      <div class="texto-inicio">
+        <h1 id="titulo-inicio" class="frase">
+          Entre todos os caminhos possíveis, o meu sempre acaba em você.
+        </h1>
+
+        <div class="mensagem">
+          <p>
+            Desde o dia 15 de junho de 2024, a minha vida ganhou outra cor,
+            outro ritmo e um lugar para voltar.
+          </p>
+
+          <p>
+            Este espaço guarda o que a gente viveu e o que ainda vai viver.
+            Cada foto, cada música e cada segundo contam a mesma história:
+            a nossa.
+          </p>
+
+          <p class="assinatura">
+            Com todo o meu amor.
+
+            <svg class="girassol" viewBox="0 0 48 48" aria-hidden="true">
+              <g fill="#a87a30">
+                <ellipse cx="24" cy="9" rx="3" ry="7.5" transform="rotate(15 24 24)"/>
+                <ellipse cx="24" cy="9" rx="3" ry="7.5" transform="rotate(45 24 24)"/>
+                <ellipse cx="24" cy="9" rx="3" ry="7.5" transform="rotate(75 24 24)"/>
+                <ellipse cx="24" cy="9" rx="3" ry="7.5" transform="rotate(105 24 24)"/>
+                <ellipse cx="24" cy="9" rx="3" ry="7.5" transform="rotate(135 24 24)"/>
+                <ellipse cx="24" cy="9" rx="3" ry="7.5" transform="rotate(165 24 24)"/>
+                <ellipse cx="24" cy="9" rx="3" ry="7.5" transform="rotate(195 24 24)"/>
+                <ellipse cx="24" cy="9" rx="3" ry="7.5" transform="rotate(225 24 24)"/>
+                <ellipse cx="24" cy="9" rx="3" ry="7.5" transform="rotate(255 24 24)"/>
+                <ellipse cx="24" cy="9" rx="3" ry="7.5" transform="rotate(285 24 24)"/>
+                <ellipse cx="24" cy="9" rx="3" ry="7.5" transform="rotate(315 24 24)"/>
+                <ellipse cx="24" cy="9" rx="3" ry="7.5" transform="rotate(345 24 24)"/>
+              </g>
+
+              <g fill="#d4a547">
+                <ellipse cx="24" cy="9" rx="3" ry="7.5" transform="rotate(0 24 24)"/>
+                <ellipse cx="24" cy="9" rx="3" ry="7.5" transform="rotate(30 24 24)"/>
+                <ellipse cx="24" cy="9" rx="3" ry="7.5" transform="rotate(60 24 24)"/>
+                <ellipse cx="24" cy="9" rx="3" ry="7.5" transform="rotate(90 24 24)"/>
+                <ellipse cx="24" cy="9" rx="3" ry="7.5" transform="rotate(120 24 24)"/>
+                <ellipse cx="24" cy="9" rx="3" ry="7.5" transform="rotate(150 24 24)"/>
+                <ellipse cx="24" cy="9" rx="3" ry="7.5" transform="rotate(180 24 24)"/>
+                <ellipse cx="24" cy="9" rx="3" ry="7.5" transform="rotate(210 24 24)"/>
+                <ellipse cx="24" cy="9" rx="3" ry="7.5" transform="rotate(240 24 24)"/>
+                <ellipse cx="24" cy="9" rx="3" ry="7.5" transform="rotate(270 24 24)"/>
+                <ellipse cx="24" cy="9" rx="3" ry="7.5" transform="rotate(300 24 24)"/>
+                <ellipse cx="24" cy="9" rx="3" ry="7.5" transform="rotate(330 24 24)"/>
+              </g>
+
+              <circle cx="24" cy="24" r="8" fill="#3a1a14"/>
+              <circle cx="24" cy="24" r="8" fill="none" stroke="#7a1d30" stroke-width="1.5"/>
+              <circle cx="24" cy="24" r="3" fill="#5a2a1c"/>
+            </svg>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Galeria -->
+    <section
+      class="pagina"
+      id="pagina-galeria"
+      aria-labelledby="titulo-galeria"
+      hidden
+    >
+      <h2 id="titulo-galeria" class="titulo-pagina">Galeria</h2>
+      <p class="subtitulo">Momentos que a gente quis guardar.</p>
+
+      <div class="grade" id="grade"></div>
+    </section>
+
+    <!-- Música -->
+    <section
+      class="pagina"
+      id="pagina-musica"
+      aria-labelledby="titulo-musica"
+      hidden
+    >
+      <h2 id="titulo-musica" class="titulo-pagina">Nossa Música</h2>
+      <p class="subtitulo">A trilha sonora do que a gente vive.</p>
+
+      <div class="player" id="player">
+
+        <div class="capa" id="capa">
+          <img
+            id="capa-img"
+            src="imagens/foto22.jpeg"
+            alt="Capa de Que Sorte a Nossa"
+          >
+        </div>
+
+        <div class="player-info">
+
+          <h3 class="musica-nome" id="musica-nome">
+            Que Sorte a Nossa
+          </h3>
+
+          <p class="musica-artista" id="musica-artista">
+            Matheus &amp; Kauan
+          </p>
+
+          <div class="progresso">
+            <span id="tempo-atual">0:00</span>
+
+            <input
+              type="range"
+              id="barra"
+              min="0"
+              max="100"
+              value="0"
+              step="0.1"
+              aria-label="Progresso da música"
+            >
+
+            <span id="tempo-total">0:00</span>
+          </div>
+
+          <div class="controles-musica">
+
+            <button
+              class="botao-faixa"
+              id="btn-anterior"
+              type="button"
+              aria-label="Música anterior"
+              title="Música anterior"
+            >
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M6 5h2v14H6zM19 5v14L9 12z"/>
+              </svg>
+            </button>
+
+            <button
+              class="botao-play"
+              id="btn-play"
+              type="button"
+              aria-label="Tocar música"
+            >
+              <svg class="icone-play" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M8 5.5v13l11-6.5z"/>
+              </svg>
+
+              <svg class="icone-pausa" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M7 5h3.5v14H7zM13.5 5H17v14h-3.5z"/>
+              </svg>
+            </button>
+
+            <button
+              class="botao-faixa"
+              id="btn-proxima"
+              type="button"
+              aria-label="Próxima música"
+              title="Próxima música"
+            >
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M16 5h2v14h-2zM5 5v14l10-7z"/>
+              </svg>
+            </button>
+
+          </div>
+
+          <p class="posicao-musica" id="posicao-musica">1 de 4</p>
+
+          <p
+            class="aviso-audio"
+            id="aviso-audio"
+            role="status"
+            hidden
+          ></p>
+
+        </div>
+
+        <audio id="audio" preload="metadata"></audio>
+
+      </div>
+    </section>
+
+    <!-- Nosso tempo -->
+    <section
+      class="pagina"
+      id="pagina-tempo"
+      aria-labelledby="titulo-tempo"
+      hidden
+    >
+      <h2 id="titulo-tempo" class="titulo-pagina">Nosso Tempo</h2>
+
+      <p class="subtitulo" id="data-inicio-texto"></p>
+
+      <div class="contador" role="timer" aria-live="off">
+
+        <div class="unidade">
+          <strong id="c-anos">0</strong>
+          <span id="r-anos">anos</span>
+        </div>
+
+        <div class="unidade">
+          <strong id="c-meses">0</strong>
+          <span id="r-meses">meses</span>
+        </div>
+
+        <div class="unidade">
+          <strong id="c-dias">0</strong>
+          <span id="r-dias">dias</span>
+        </div>
+
+        <div class="unidade">
+          <strong id="c-horas">00</strong>
+          <span id="r-horas">horas</span>
+        </div>
+
+        <div class="unidade">
+          <strong id="c-minutos">00</strong>
+          <span id="r-minutos">minutos</span>
+        </div>
+
+        <div class="unidade">
+          <strong id="c-segundos">00</strong>
+          <span id="r-segundos">segundos</span>
+        </div>
+
+      </div>
+
+      <p class="rodape-tempo">
+        E o relógio continua a andar a nosso favor.
+      </p>
+    </section>
+
+  </main>
+
+  <!-- Foto ampliada -->
+  <div
+    class="lightbox"
+    id="lightbox"
+    role="dialog"
+    aria-modal="true"
+    aria-label="Foto ampliada"
+    hidden
+  >
+
+    <button
+      class="lb-fechar"
+      id="lb-fechar"
+      type="button"
+      aria-label="Fechar"
+    >
+      &times;
+    </button>
+
+    <button
+      class="lb-nav lb-anterior"
+      id="lb-anterior"
+      type="button"
+      aria-label="Foto anterior"
+    >
+      &#8249;
+    </button>
+
+    <figure class="lb-figura">
+      <img id="lb-img" alt="">
+      <figcaption id="lb-legenda"></figcaption>
+    </figure>
+
+    <button
+      class="lb-nav lb-proxima"
+      id="lb-proxima"
+      type="button"
+      aria-label="Próxima foto"
+    >
+      &#8250;
+    </button>
+
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
